@@ -1,0 +1,4 @@
+//Tiene que usar a la hoja _variables.scss, la cual traera un objeto de tipo "variables"
+//Al cual puedo acceder a sus propiedades haciendo uso de variables.$var
+@use "base/variables" as var;
+

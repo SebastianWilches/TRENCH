@@ -1,0 +1,45 @@
+@use "base/variables" as var;
+@use 'base/mixins' as mixins;
+
+/* HEADER */
+.header{
+    background-color: var.$color_navbar;
+    height: auto;
+    a{
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: var.$color_texto;
+        &:hover{
+            color: var.$color_resaltado;    
+        }
+        transition: color .5s ease;
+    }
+
+    .nav{
+        display: block;
+        align-items: center;
+        text-align: center;
+        @include mixins.mqTablet{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+    }
+    .nav-principal{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-top: 0.1rem solid var.$color_texto;
+        gap: 0.5rem;
+        @include mixins.mqTablet{
+            border-top: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 3rem;
+            padding: 0 3rem 0 3rem;
+        }
+    }
+}
+

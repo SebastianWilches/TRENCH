@@ -1,0 +1,30 @@
+@use "variables" as var;
+
+@mixin mqTelefono{
+    @media (min-width: var.$telefono) {
+        @content; //El content se usa para que todo lo que yo pase entre llaves en el lugar de uso
+                  //Sea traido aqui
+    }
+}
+
+@mixin mqTablet{
+    @media (min-width: var.$tablet) {
+        @content;
+    }
+}
+
+@mixin mqEscritorio{
+    @media (min-width: var.$escritorio) {
+        @content;
+    }
+}
+
+@mixin mqEscritorio{
+    @media (min-width: var.$escritorioXL) {
+        @content;
+    }
+}
+
+@mixin boton($color) {
+    color: $color;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "trench",
+  "version": "1.0.0",
+  "description": "Sitio web hecho con GULP y SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "keywords": [
+    "SASS",
+    "GULP"
+  ],
+  "author": "Jhoan Sebastian Wilches Jimenez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.44.0"
+  }
+}
